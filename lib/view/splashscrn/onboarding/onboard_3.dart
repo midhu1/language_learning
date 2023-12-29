@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:language_learning/utils/colorconstant/colors.dart';
-import 'package:language_learning/view/splashscrn/onboarding/onboard_3.dart';
+import 'package:language_learning/view/splashscrn/loginandsignup/login.dart';
 
-class OnBoardPage2 extends StatelessWidget {
-  const OnBoardPage2({super.key});
+class OnBoardPage3 extends StatelessWidget {
+  const OnBoardPage3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class OnBoardPage2 extends StatelessWidget {
                   width: 200,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage("asset/illustrations (2).png"),
+                          image: AssetImage("asset/illustrations (3).png"),
                           fit: BoxFit.cover)),
                 ),
               ),
@@ -49,14 +49,14 @@ class OnBoardPage2 extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 30,
                             fontWeight: FontWeight.bold,
-                            color: Colors.orange),
+                            color: ColorConstant.textcolor),
                       ),
                       Text(
                         ".",
                         style: TextStyle(
                             fontSize: 30,
                             fontWeight: FontWeight.bold,
-                            color: ColorConstant.textcolor),
+                            color: Colors.orange),
                       )
                     ],
                   ),
@@ -69,7 +69,7 @@ class OnBoardPage2 extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          "Take your time to learn",
+                          "The lessons you need to learn",
                           style: TextStyle(
                               fontSize: 30, color: ColorConstant.textcolor),
                         ),
@@ -78,7 +78,7 @@ class OnBoardPage2 extends StatelessWidget {
                         ),
                         Text(
                           maxLines: 2,
-                          "Develop a habit of learning and\n make it a part of your daily routine",
+                          "Using a variety of learning \nstyles to learn and retain",
                           style: TextStyle(
                               fontSize: 20, color: ColorConstant.textcolor),
                         )
@@ -95,7 +95,7 @@ class OnBoardPage2 extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => OnBoardPage3(),
+                            builder: (context) => LoginPage(),
                           ));
                     },
                     child: Text(

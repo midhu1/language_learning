@@ -1,3 +1,3 @@
-class ImageConstant{
-  static String logo ="asset/illustrations.png";
+class ImageConstant {
+  static String facbooklogo = "asset/Logo.png";
 }
